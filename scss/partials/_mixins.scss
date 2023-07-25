@@ -1,4 +1,18 @@
-@mixin txtnav($font , $weight) {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
+@mixin txtnav($font , $weight, $size) {
+    font-family: 'Teko', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+@mixin tituloIndex($font , $size) {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 40px;
+    @media (max-width: 557px) {
+        font-size: 20px;
+    }
+}
+
+@mixin titulos($font , $size) {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 45px;
 }

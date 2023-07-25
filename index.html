@@ -16,7 +16,7 @@
     <!-- HEADER -->
     <header class="header">
         <!-- NAVBAR -->
-        <nav class="navbar-expand-lg bg-body-tertiary header__navbar navbar">
+        <nav class="navbar-expand-lg fixed-top bg-body-tertiary header__navbar navbar">
             <!-- CONTENIDO DEL NAVBAR -->
             <div class="container-fluid navbar__navCont">
                 <!-- MENU HAMBURGUESA -->
@@ -33,19 +33,17 @@
                 <div class="collapse navbar-collapse navCont__collCont collCont" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 collCont__ul">
                         <li class="nav-item collCont__li">
-                            <a class="nav-link active collCont__li--a" aria-current="page"
-                                href="index.html">INICIO</a>
+                            <a class="nav-link active collCont__li--a" aria-current="page" href="index.html">INICIO</a>
                         </li>
-                        <li class="nav-item dropdown collCont__drop">
-                            <a class="nav-link dropdown-toggle collCont__drop--a" href="#" role="button"
+                        <li class="nav-item dropdown collCont__li liDrop">
+                            <a class="nav-link dropdown-toggle collCont__li--a" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 PRODUCTOS
                             </a>
-                            <ul class="dropdown-menu collCont__dropUl">
-                                <li><a class="dropdown-item collCont__dropUl--li"
+                            <ul class="dropdown-menu liDrop__ul">
+                                <li class="liDrop__li"><a class="dropdown-item liDrop__li--a"
                                         href="./pages/productos.html">TODOS</a></li>
                             </ul>
-                        </li>
                         <li class="nav-item collCont__li">
                             <a class="nav-link active collCont__li--a" aria-current="page"
                                 href="./pages/ventas.html">VENTAS</a>
@@ -67,35 +65,86 @@
 
     <!-- MAIN -->
     <main class="main">
-        <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="8000">
-                <img src="./recursos/imagen_carrusel_1.jpg" class="d-block w-100" alt="imagen">
-              </div>
-              <div class="carousel-item" data-bs-interval="8000">
-                <img src="./recursos/imagen_carrusel_2.jpg" class="d-block w-100" alt="imagen">
-              </div>
-              <div class="carousel-item" data-bs-interval="8000">
-                <img src="./recursos/imagen_carrusel_3.jpg" class="d-block w-100" alt="imagen">
-              </div>
+        <div id="carouselExampleRide" class="carousel slide carousel-fade main__carousel" data-bs-ride="carousel">
+            <div class="carousel-inner carousel__contItems contItems">
+                <div class="carousel-item active contItems__div" data-bs-interval="4000">
+                    <img src="./recursos/imagen_carrusel_1.jpg" class="d-block w-100 contItems__div--img" alt="imagen">
+                </div>
+                <div class="carousel-item contItems__div" data-bs-interval="4000">
+                    <img src="./recursos/imagen_carrusel_2.jpg" class="d-block w-100 contItems__div--img" alt="imagen">
+                </div>
+                <div class="carousel-item contItems__div" data-bs-interval="4000">
+                    <img src="./recursos/imagen_carrusel_3.jpg" class="d-block w-100 contItems__div--img" alt="imagen">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
+
+        <section class="indexSection">
+            <div class="indexSection__title">
+                <h2 class="indexSection__title--h2">PRODUCTOS DESTACADOS</h2>
+            </div>
+            <div class="indexSection__contDiv contDiv">
+                <div class="card contDiv__card" style="width: 15rem;">
+                    <img src="./recursos/producto_1_a.jpeg" class="card-img-top contDiv__card--img" alt="Ropa">
+                    <div class="card-body contDiv__div">
+                        <h5 class="card-title contDiv__div--titulo">Saco Crop</h5>
+                        <p class="card-text contDiv__div--talle">Talle S</p>
+                        <p class="card-textcont contDiv__div--precio">$1500</p>
+                    </div>
+                </div>
+                <div class="card contDiv__card" style="width: 15rem;">
+                    <img src="./recursos/producto_2_a.jpeg" class="card-img-top contDiv__card--img" alt="Ropa">
+                    <div class="card-body contDiv__div">
+                        <h5 class="card-title contDiv__div--titulo">Polera Crop</h5>
+                        <p class="card-text contDiv__div--talle">Talle M/L</p>
+                        <p class="card-text contDiv__div--precio">$1500</p>
+                    </div>
+                </div>
+                <div class="card contDiv__card" style="width: 15rem;">
+                    <img src="./recursos/producto_3_a.jpeg" class="card-img-top contDiv__card--img" alt="Ropa">
+                    <div class="card-body contDiv__div">
+                        <h5 class="card-title contDiv__div--titulo">Bandolera c/ monedero tira regulable</h5>
+                        <p class="card-text contDiv__div--precio">$3500</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
     <!-- FIN MAIN -->
 
     <!-- FOOTER -->
-    <footer>
-
+    <footer class="footer">
+        <div class="container text-center footer__sitemap sitemap">
+            <div class="col sitemap__col">
+                <div class="row sitemap__row">
+                    <a class="sitemap__row--a" href="./pages/contacto.html">CONTACTANOS</a>
+                </div>
+                <div class="row sitemap__row">
+                    <a class="sitemap__row--a" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__redes redes">
+            <a class="redes__a" href="https://www.instagram.com/">
+                <img class="redes__a--img" src="./recursos/instagram_footer.png" alt="Logo de instagram">
+            </a>
+            <a class="redes__a" href="https://es-la.facebook.com/">
+                <img class="redes__a--img" src="./recursos/facebook_footer.png" alt="Logo de facebook">
+            </a>
+        </div>
+        <p>©Copyright BLACK RAINBOW - 2023</p>
     </footer>
     <!-- FIN FOOTER -->
 

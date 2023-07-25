@@ -1,0 +1,26 @@
+.footer {
+    background-color: $gris_claro;
+    &__sitemap {
+        .sitemap__col {
+            .sitemap__row {
+                &--a {
+                    font-family:'Sintony', sans-serif;
+                    color: $negro;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    .footer__redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .redes__a {            
+            .redes__a--img{
+                height: 60px;
+                margin: 10px;
+            }
+        }
+    }
+}

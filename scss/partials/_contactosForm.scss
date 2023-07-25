@@ -1,0 +1,85 @@
+.mainContacto__txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .mainContacto__txt--h1 {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 45px;
+        margin: 30px 0;
+    }
+}
+
+.main__formCont {
+    .formCont__form {
+        .formCont__divGroup {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .formCont__div {
+                .formCont__div--input {
+                    width: 400px;
+                    height: 40px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+
+    .formCont__div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .formCont__div--input {
+            width: 400px;
+            height: 40px;
+            margin: 5px;
+        }
+
+        .formCont__div--inputBig {
+            width: 400px;
+            height: 150px;
+            margin: 10px;
+        }
+    }
+
+    .formCont__formB {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .formCont__formB--button {
+            width: 400px;
+            background-color: $gris_claro;
+            margin: 10px;
+            margin-bottom: 30px;
+            height: 50px;
+            border-radius: 0;
+        }
+    }
+}
+
+@media (min-width:630px) {
+    .main__formCont {
+        .formCont__form {
+            .formCont__divGroup {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+
+                .formCont__div {
+                    .formCont__div--input {
+                        width: 195px;
+                        height: 40px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

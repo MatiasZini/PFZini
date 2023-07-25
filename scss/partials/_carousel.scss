@@ -1,0 +1,20 @@
+.carousel__contItems {
+    .contItems__div{
+        .contItems__div--img{
+            filter: brightness(0.9);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel__contItems {
+    .contItems__div{
+        height: 600px;
+        .contItems__div--img{
+            height: 100%;
+            object-fit: fill;
+            filter: brightness(0.9);
+        }
+    }
+}
+}

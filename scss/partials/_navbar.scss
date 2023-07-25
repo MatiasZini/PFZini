@@ -26,18 +26,21 @@
             .collCont__ul {
                 .collCont__li {
                     .collCont__li--a {
-                        @include txtnav(font , weight);
+                        @include txtnav(font, weight, size);
                     }
 
-                    .collCont__drop {
-                        .collCont__drop--a {
-                            @include txtnav(font , weight);
+                    .liDrop {
+                        &__ul{
+                            &__li{
+                                &--a {
+                                    @include txtnav(font, weight, size);
+                                }
+                            }
                         }
-                        .drop__dropUl--:focus {
-                            box-shadow: none;
-                        }
-
                     }
+
+
+                    
                 }
 
             }
@@ -47,19 +50,42 @@
 
 
 @media (min-width: 992px) {
-    .navbar__navCont {
-        background-color: $blanco;
-        border-bottom: solid $gris_claro 1px;
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
+    .header__navbar {
+        .navbar__navCont {
+            background-color: $blanco;
+            border-bottom: solid $gris_claro 1px;
+            padding-bottom: 0px;
+            display: flex;
+            flex-direction: column;
 
-        .navCont__a {
-            margin: auto;
+            .navCont__a {
+                margin: auto;
 
-            &--img {
-                width: 200px;
+                &--img {
+                    width: 200px;
+                }
+            }
+            .navCont__collCont {
+                .collCont__ul {
+                    .collCont__li {
+                        margin: 0 50px;
+                        .collCont__li--a {
+                            @include txtnav(font, weight, size);
+                        }
+    
+                        .liDrop {
+                            &__ul{
+                                &__li{
+                                    &--a {
+                                        @include txtnav(font, weight, size);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
+        
     }
 }

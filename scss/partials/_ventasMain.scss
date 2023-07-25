@@ -1,0 +1,102 @@
+.mainVentas {
+    img {
+        width: 400px;
+    }
+
+    .mainVentas__txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .mainVentas__txt--h1 {
+            @include titulos(font, size);
+            margin: 30px 0;
+        }
+
+        .mainVentas__txt--p {
+            margin: 18px;
+            font-family: 'Sintony', sans-serif;
+        }
+    }
+
+    .mainVentas__sect1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+        .sect1__txt {
+            .sect1__txt--h3 {
+                font-family: 'Sintony', sans-serif;
+                text-transform: uppercase;
+            }
+
+            .sect1__txt--p {
+                font-family: 'Sintony', sans-serif;
+            }
+        }
+    }
+
+    .mainVentas__sect2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+        .sect2__txt {
+            .sect2__txt--h3 {
+                font-family: 'Sintony', sans-serif;
+                text-transform: uppercase;
+            }
+
+            .sect2__txt--p {
+                font-family: 'Sintony', sans-serif;
+            }
+        }
+    }
+}
+
+@media (min-width: 680px) {
+    .mainVentas {
+        .mainVentas__sect1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+
+            .sect1__txt {
+                .sect1__txt--h3 {
+                    font-family: 'Sintony', sans-serif;
+                    text-transform: uppercase;
+                }
+
+                .sect1__txt--p {
+                    font-family: 'Sintony', sans-serif;
+                }
+            }
+        }
+
+        .mainVentas__sect2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+
+            .sect2__txt {
+                .sect2__txt--h3 {
+                    font-family: 'Sintony', sans-serif;
+                    text-transform: uppercase;
+                }
+
+                .sect2__txt--p {
+                    font-family: 'Sintony', sans-serif;
+                }
+            }
+        }
+    }
+}

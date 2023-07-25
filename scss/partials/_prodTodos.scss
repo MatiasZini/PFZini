@@ -1,0 +1,106 @@
+.header__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    .header__title--h1 {
+        @include titulos(font, size);
+    }
+}
+
+.mainProd {
+    &__toolbar {
+        .toolbar__div {
+            border-top: $gris_oscuro solid 2px;
+            border-bottom: $gris_oscuro solid 2px;
+
+            &--button {
+                border-radius: 0;
+            }
+        }
+    }
+
+    &__contDiv {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+        margin: 30px 10px;
+
+        .contDiv__card {
+            border: none;
+
+            .contDiv__card--img {
+                border-radius: 0;
+                height: 300px;
+            }
+
+            .contDiv__div {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .contDiv__div--titulo {
+                    font-family: 'Sintony', sans-serif;
+
+                }
+
+
+                .contDiv__div--talle {
+                    font-family: 'Sintony', sans-serif;
+                }
+
+
+                .contDiv__div--precio {
+                    color: $gris;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 650px) {
+    .mainProd {
+        &__contDiv {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            justify-items: center;
+            gap: 10px;
+            margin: 30px 10px;
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    .mainProd {
+        &__contDiv {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            justify-items: center;
+            gap: 10px;
+            margin: 30px 10px;
+        }
+    }
+
+}
+
+@media (min-width: 1390px) {
+    .mainProd {
+        &__contDiv {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            justify-items: center;
+            gap: 10px;
+            margin: 30px 10px;
+        }
+    }
+
+}
