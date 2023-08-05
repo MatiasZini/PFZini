@@ -4,23 +4,35 @@
         align-items: center;
         justify-content: center;
         margin: 30px 0;
+        border-bottom: #e4e4e4 solid 1px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: linear-gradient(178deg, #ffffff, #ffffff);
+        box-shadow: 0px 0 77px #ffffff, 1px 20px 20px 0px #e2e2e2;
 
         .indexSection__title--h2 {
             @include tituloIndex(font, size);
+            margin-bottom: 30px;
         }
     }
 
     .indexSection__contDiv {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 18px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 21%;
+        gap: 180px;
+        margin: 50px 0;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+
         .contDiv__card {
             border: none;
 
             .contDiv__card--img {
                 border-radius: 0;
-                height: 300px;
+                inline-size: 100%;
+                aspect-ratio: 4 / 5;
+                object-fit: cover;
             }
 
             .contDiv__div {
@@ -28,6 +40,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+
                 .contDiv__div--titulo {
                     font-family: 'Sintony', sans-serif;
 
@@ -45,87 +58,182 @@
             }
         }
     }
-}
 
-@media (min-width: 690px){
-    .indexSection{
-        .indexSection__contDiv {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: center;
-            .contDiv__card {
-                border: none;
-                width: 18rem;
-                margin: 0 10px;
-                .contDiv__card--img {
-                    border-radius: 0;
-                    height: 300px;
-                }
-    
-                .contDiv__div {
-                    padding: 0;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    .contDiv__div--titulo {
-                        font-family: 'Sintony', sans-serif;
-    
-                    }
-    
-    
-                    .contDiv__div--talle {
-                        font-family: 'Sintony', sans-serif;
-                    }
-    
-    
-                    .contDiv__div--precio {
-                        color: $gris;
-                    }
-                }
-            }
-        }    
+    .nada {
+        border-top: #e4e4e4 solid 1px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-color: white;
+        background: linear-gradient(180deg, #ffffff, #ffffff);
+        box-shadow: 0px 0 77px #ffffff, 1px -14px 15px 0px #e2e2e2;
     }
 }
 
-@media (min-width: 850px){
-    .indexSection{
+.indexSectionVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .indexSectionVideo__txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .indexSectionVideo__txt--h4 {
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 24px;
+            margin: 14px 0 5px 0;
+        }
+
+        .indexSectionVideo__txt--p {
+            font-family: 'Sintony', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px;
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .indexSection {
         .indexSection__contDiv {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: space-evenly;
-            .contDiv__card {
-                border: none;
-                width: 18rem;
-                margin: 0 0;
-                .contDiv__card--img {
-                    border-radius: 0;
-                    height: 300px;
-                }
-    
-                .contDiv__div {
-                    padding: 0;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    .contDiv__div--titulo {
-                        font-family: 'Sintony', sans-serif;
-    
-                    }
-    
-    
-                    .contDiv__div--talle {
-                        font-family: 'Sintony', sans-serif;
-                    }
-    
-    
-                    .contDiv__div--precio {
-                        color: $gris;
-                    }
-                }
-            }
-        }    
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 160px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 140px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 120px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 100px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 80px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 70px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 60px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 50px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 40px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 30px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .indexSection {
+        .indexSection__contDiv {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 21%;
+            gap: 20px;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+        }
     }
 }

@@ -11,8 +11,8 @@
     .contItems__div{
         height: 600px;
         .contItems__div--img{
-            height: 100%;
-            object-fit: fill;
+            width: 100%;
+            object-fit: cover;
             filter: brightness(0.9);
         }
     }

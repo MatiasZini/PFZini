@@ -1,5 +1,8 @@
 .footer {
     background-color: $gris_claro;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     &__sitemap {
         .sitemap__col {
             .sitemap__row {

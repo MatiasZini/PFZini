@@ -8,11 +8,14 @@ a {
 }
 
 body{
-    padding-top: 115px;
+    padding-top: 110px;
+    padding-bottom: 260px;
+    position: relative;
+
 }
 
 @media (min-width: 992px) {
     body{
-        padding-top: 158px;
+        padding-top: 180px;
     }
 }
