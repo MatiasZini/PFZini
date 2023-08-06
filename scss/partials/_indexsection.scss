@@ -10,7 +10,7 @@
         background: linear-gradient(178deg, #ffffff, #ffffff);
         box-shadow: 0px 0 77px #ffffff, 1px 20px 20px 0px #e2e2e2;
 
-        .indexSection__title--h2 {
+        .indexSection__title--h1 {
             @include tituloIndex(font, size);
             margin-bottom: 30px;
         }
