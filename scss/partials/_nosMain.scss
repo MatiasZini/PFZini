@@ -1,16 +1,114 @@
-.mainNos__txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mainNos {
+    margin: 0;
+    .mainNos__txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-    .mainNos__txt--h1 {
-        @include titulos(font, size);
-        margin: 30px 0;
+        .mainNos__txt--h1 {
+            @include titulos(font, size);
+            margin: 30px 0;
+        }
+
+        .mainNos__txt--p {
+            margin: 18px;
+            font-family: 'Sintony', sans-serif;
+        }
+
+
     }
+    .nosSection {
+        margin: 20px 0;
+        .nosSection__1{
+            margin: 35px 0;
+            .nosSection__tituloIcon {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+             .nosSection__tituloIcon--h3{
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 32px;
+             }
+            }
+            .nosSection__1--p {
+                margin: 5px 10px;
+            }
+        }
+        .nosSection__2{ 
+            margin: 35px 0;
+            .nosSection__tituloIcon {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 13px;
+                margin-left: 6px;
+             .nosSection__tituloIcon--h3{
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 32px;
+             }
+            }
+            .nosSection__2--p {
+                margin: 5px 10px;
+            }
+        }
+    }
+}
 
-    .mainNos__txt--p {
-        margin: 18px;
-        font-family: 'Sintony', sans-serif;
+@media (min-width: 800px) {
+    .mainNos {
+        margin: 0 20%;
+        .mainNos__txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mainNos__txt--h1 {
+                @include titulos(font, size);
+                margin: 30px 0;
+            }
+    
+            .mainNos__txt--p {
+                margin: 18px;
+                font-family: 'Sintony', sans-serif;
+            }
+    
+    
+        }
+        .nosSection {
+            margin: 20px 0;
+            .nosSection__1{
+                margin: 35px 0;
+                .nosSection__tituloIcon {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                 .nosSection__tituloIcon--h3{
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-size: 32px;
+                 }
+                }
+                .nosSection__1--p {
+                    margin: 5px 10px;
+                }
+            }
+            .nosSection__2{ 
+                margin: 35px 0;
+                .nosSection__tituloIcon {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 13px;
+                    margin-left: 6px;
+                 .nosSection__tituloIcon--h3{
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-size: 32px;
+                 }
+                }
+                .nosSection__2--p {
+                    margin: 5px 10px;
+                }
+            }
+        }
     }
 }
